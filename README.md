@@ -37,6 +37,6 @@
 
 ## Screenshot
 
-![Halloween Fun Page](.src/assets/screenshot_01.png)
+![Halloween Fun Page](src/assets/screenshot_01.png)
 
 
