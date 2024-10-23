@@ -1,0 +1,50 @@
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+
+  .switch .spider-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #586579; 
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+
+.spider-slider::before {
+    position: absolute;
+    content: "";
+    height: 34px;   
+    width: 34px;    
+    left: 0;       
+    bottom: 0;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url('/assets/spider_03.png');
+    background-size: cover;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+input:checked + .spider-slider {
+    background-color: #f56d02; 
+}
+
+input:checked + .spider-slider::before {
+    transform: translateX(26px); 
+    background-color: orange;
+}

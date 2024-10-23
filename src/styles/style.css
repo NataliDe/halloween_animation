@@ -1,0 +1,114 @@
+* {
+    font-size: 16px;
+
+}
+body {
+    background-color: rgb(38, 50, 55); 
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.site-header {
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    overflow: hidden; 
+    margin-bottom: 30px;
+    position: relative;
+}
+.site-header h1 {
+font-size: 4rem;
+position: relative;
+color: bisque;
+text-shadow: 
+    -2px -2px 0 black,   
+    1px -1px 0 black,   
+    -2px 2px 0 black,    
+    1px 1px 0 black;     
+/*background: rgba(255,255,255,.5);*/
+display: inline-block;
+margin-left: 30px;
+}
+.site-header-bg {
+    background: url('/assets/bg_1.jpg');
+    background-size: cover; 
+    background-position-x: 50% ;
+    background-position-y: -30% ;
+    background-repeat: no-repeat;
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));*/
+}
+@keyframes header-animation {
+    0% {
+    background-position-y: -95%;
+    }
+    100%{
+        background-position-y: 75%;
+    }
+}
+
+.spider {
+    width: 60px;
+    height: 177px;
+    position: absolute;
+    background-image: url(/assets/spider.png);
+    background-size: contain;
+    right: 200px;
+    top: -300px;
+    cursor: pointer;
+
+}
+.spider-animation  {
+    animation-name: header-animation-spider;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes header-animation-spider {
+    0% {
+    top: -300px;
+    }
+    60%{
+        top: -95px;
+    }
+    70% {
+        top: -130px;
+    }
+    100%{
+        top: -10px;
+    }
+}
+.find-spider-text {
+    font-size: 1.5rem; 
+    color: bisque; 
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
+
+.halloween-facts {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 165, 0, 0.1); 
+    border-left: 4px solid orange;
+    color: bisque; 
+    font-size: 1.2rem;
+}
+
+.halloween-facts h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.halloween-facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.halloween-facts li {
+    margin-bottom: 8px;
+}
